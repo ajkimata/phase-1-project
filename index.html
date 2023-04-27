@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KIMATA INC Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -13,10 +16,10 @@
         <header>
             <h1>KIMATA INC</h1>
         </header>
-
+    
         <div class="header-social-icons ml-0">
             <div class="social-icons follow-icons">
-                <a href="https://www.facebook.com/beaconNestKenya" target="_blank" rel="noopener noreferrer nofollow"
+                <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow"
                     class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i
                         class="icon-facebook"></i></a>
                 <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow"
@@ -32,6 +35,7 @@
                     aria-label="Follow on YouTube"><i class="icon-youtube"></i></a>
             </div>
         </div>
+        <!-- Closing tag for the header-social-icons div -->
         <div class="flex-col show-for-medium flex-grow">
             <ul class="nav nav-center nav-small mobile-nav nav-divided">
                 <li class="custom html_topbar_left">
@@ -40,6 +44,7 @@
             </ul>
         </div>
     </nav>
+    
 
     <!-- Banner section -->
     <section id="banner">
@@ -147,18 +152,28 @@
         <h2>Contact Us</h2>
         <form>
             <label for="name-input">Name:</label>
-            <input type="text" id="name-input" placeholder="Enter your name" required/>
-            
+            <input type="text" id="name-input" placeholder="Enter your name" required />
+
             <label for="email-input">Email:</label>
-            <input type="email" id="email-input" placeholder="Enter your email" required/>
-            
+            <input type="email" id="email-input" placeholder="Enter your email" required />
+
             <label for="message-input">Message:</label>
             <textarea id="message-input" placeholder="Enter your message" required></textarea>
-           
+
+            <label for="property-dropdown">Property Type:</label>
+            <select id="property-dropdown">
+                <!-- <option value="house">House</option> -->
+                <!-- <option value="apartment">Apartment</option>
+                <option value="condo">Condo</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="land">Land</option> -->
+            </select>
+            </select><br>
             <button type="submit">Submit</button>
         </form>
     </section>
     <script src="index.js"></script>
+    <!-- <script src="/js/bundle.js"></script> -->
 </body>
 
 </html>

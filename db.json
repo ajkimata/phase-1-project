@@ -16,6 +16,14 @@
             "construction": [
                 "fireplace",
                 "landry"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -34,6 +42,14 @@
             "construction": [
                 "elevator",
                 "garage"
+            ],
+            "responses": [
+                {
+                  "id": "2",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -52,6 +68,14 @@
             "construction": [
                 "basement",
                 "landry"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -70,6 +94,14 @@
             "construction": [
                 "fireplace",
                 "gym"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -88,6 +120,14 @@
             "construction": [
                 "landry",
                 "gym"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -106,6 +146,14 @@
             "construction": [
                 "basement",
                 "fireplace"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -124,6 +172,14 @@
             "construction": [
                 "elevator",
                 "garage"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -142,6 +198,14 @@
             "construction": [
                 "basement",
                 "pool"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         },
         {
@@ -160,6 +224,14 @@
             "construction": [
                 "garage",
                 "landry"
+            ],
+            "responses": [
+                {
+                  "id": "1",
+                  "name": "John Doe",
+                  "email": "johndoe@example.com",
+                  "message": "I'm interested in this property."
+                }
             ]
         }
     ]
