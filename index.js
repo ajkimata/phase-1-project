@@ -153,8 +153,6 @@ fetch('http://localhost:3000/property')
           });
       });
 
-
-
         // handle form submit
         const form = document.querySelector('form');
         form.addEventListener('submit', (event) => {
@@ -163,17 +161,17 @@ fetch('http://localhost:3000/property')
             const name = document.getElementById('name-input').value;
             const email = document.getElementById('email-input').value;
             const message = document.getElementById('message-input').value;
-           const propertyId = document.getElementById('property').value;
+            //const propertyId = document.getElementById('property').value;
 
-            // send the data to the API
-            fetch('http://localhost:3000/response', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message})
-            })
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.error(error));
-        });
+        
+        fetch('http://localhost:3000/response', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message})
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+    });
     })
     .catch(error => console.error(error));
