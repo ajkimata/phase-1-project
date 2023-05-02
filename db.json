@@ -1,238 +1,238 @@
 {
-    "property": [
+  "property": [
+    {
+      "id": "1",
+      "title": "If you like great views then this is the one",
+      "area": "Nairobi County",
+      "address": "6 Garth rd, Scarsdale, NY 10583",
+      "city": "Scarsdale",
+      "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/25ccf9816ef72cce160cd246a04355cb/-/prod-property-core-backend-media-brk/4870128/2cbb0c3d-2c55-48a8-98ef-9dc3f3854316.jpg",
+      "type": "Duplex",
+      "floorspace": 1264,
+      "beds": 3,
+      "baths": 1,
+      "price": 295000,
+      "parking": 2,
+      "construction": [
+        "fireplace",
+        "landry"
+      ],
+      "responses": [
         {
-            "id": "1",
-            "title": "If you like great views then this is the one",
-            "area": "Nairobi County",
-            "address": "6 Garth rd, Scarsdale, NY 10583",
-            "city": "Scarsdale",
-            "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/25ccf9816ef72cce160cd246a04355cb/-/prod-property-core-backend-media-brk/4870128/2cbb0c3d-2c55-48a8-98ef-9dc3f3854316.jpg",
-            "type": "Duplex",
-            "floorspace": 1264,
-            "beds": 3,
-            "baths": 1,
-            "price": 295000,
-            "parking": 2,
-            "construction": [
-                "fireplace",
-                "landry"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Clean kitchen and large space",
-            "area": "Nairobi County",
-            "address": "39 Sterling ave, White Plains, NY 10606",
-            "city": "White Plains",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/524f474fb034959c23477fe9014bf533/-/prod-property-core-backend-media-brk/5064966/11b46f48-7f6f-488b-b27b-9fc9607028e7.JPG",
-            "type": "Condo",
-            "floorspace": 768,
-            "beds": 2,
-            "baths": 2,
-            "price": 445000,
-            "parking": 1,
-            "construction": [
-                "elevator",
-                "garage"
-            ],
-            "responses": [
-                {
-                  "id": "2",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "title": "flawless",
-            "area": "Nairobi County",
-            "address": "62 Highland St, Eastchester, NY 10608",
-            "city": "Eastchester",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/7c5dd09658dccee8d89311272d163bfd/-/prod-property-core-backend-media-brk/5064961/91993e15-9490-4463-a04f-0e3a18d74ef9.JPG",
-            "type": "Single Family",
-            "floorspace": 1264,
-            "beds": 4,
-            "baths": 1,
-            "price": 325000,
-            "parking": 0,
-            "construction": [
-                "basement",
-                "landry"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "title": "clean lines and neutral tones",
-            "area": "Nairobi County",
-            "address": "33 Alden Pl, Bronxville, NY 10708",
-            "city": "Bronxville",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/9b85a2219f7088b3d52fc04f42e0a59c/-/prod-property-core-backend-media-brk/5064968/d54e17d4-97f4-4b30-bcda-763d06c15373.JPG",
-            "type": "Townhouse",
-            "floorspace": 1074,
-            "beds": 3,
-            "baths": 1,
-            "price": 665000,
-            "parking": 0,
-            "construction": [
-                "fireplace",
-                "gym"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "title": "chic and stylish apartment",
-            "area": "Mombasa County",
-            "address": "261 California rd, Mamaroneck, NY 10612",
-            "city": "Mamaroneck",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/6767c692034387f6343a309e7063ba90/-/prod-property-core-backend-media-brk/5064970/05e36f1b-2ce8-458e-8e4d-750024fc0594.JPG",
-            "type": "Studio",
-            "floorspace": 700,
-            "beds": 1,
-            "baths": 1,
-            "price": 265000,
-            "parking": 1,
-            "construction": [
-                "landry",
-                "gym"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "title": "charming and quirky apartment",
-            "area": "Mombasa County",
-            "address": "23 Isle Lane, New Rochelle, NY 10538",
-            "city": "New Rochelle",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/7cd2f411e8075c8d436a4e10602ff2c5/-/prod-property-core-backend-media-brk/5064971/832365ee-2bb7-4408-ad39-3499e689535d.JPG",
-            "type": "Multi Family",
-            "floorspace": 1630,
-            "beds": 3,
-            "baths": 2,
-            "price": 765000,
-            "parking": 3,
-            "construction": [
-                "basement",
-                "fireplace"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "7",
-            "title": "Its the walls for me",
-            "area": "Kiambu County",
-            "address": "95 Vernon ave, Scarsdale, NY 10538",
-            "city": "Scarsdale",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/74873b698d316d3a95d7b4d93f64a781/-/prod-property-core-backend-media-brk/5064972/1e2c092e-d727-4315-8524-7dcbb2ea4c2d.JPG",
-            "type": "Studio",
-            "floorspace": 1200,
-            "beds": 1,
-            "baths": 1,
-            "price": 215000,
-            "parking": 3,
-            "construction": [
-                "elevator",
-                "garage"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "8",
-            "title": "Cozy studio apartment ",
-            "area": "Kiambu County",
-            "address": "321 Munday Lane, Eastchester, NY 10606",
-            "city": "Eastchester",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/f894222c7416dfbf3bfe4762877cd430/-/prod-property-core-backend-media-brk/5064973/3e4063b7-4765-4b50-9180-1fc320439bc4.JPG",
-            "type": "Multi Family",
-            "floorspace": 2100,
-            "beds": 3,
-            "baths": 1,
-            "price": 845000,
-            "parking": 3,
-            "construction": [
-                "basement",
-                "pool"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
-        },
-        {
-            "id": "9",
-            "title": "Modern Finish",
-            "area": "Kiambu County",
-            "address": "123 Ducksworth Way, New Rochelle, NY 10535",
-            "city": "New Rochelle",
-            "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/f961168153fbbe83dc894b0db2d198d7/-/prod-property-core-backend-media-brk/5064974/8da3af98-8439-4ce8-a62c-1a07b3859aed.JPG",
-            "type": "Single Family",
-            "floorspace": 2300,
-            "beds": 2,
-            "baths": 1,
-            "price": 650000,
-            "parking": 3,
-            "construction": [
-                "garage",
-                "landry"
-            ],
-            "responses": [
-                {
-                  "id": "1",
-                  "name": "John Doe",
-                  "email": "johndoe@example.com",
-                  "message": "I'm interested in this property."
-                }
-            ]
+          "id": "1",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
         }
-    ]
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Clean kitchen and large space",
+      "area": "Nairobi County",
+      "address": "39 Sterling ave, White Plains, NY 10606",
+      "city": "White Plains",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/524f474fb034959c23477fe9014bf533/-/prod-property-core-backend-media-brk/5064966/11b46f48-7f6f-488b-b27b-9fc9607028e7.JPG",
+      "type": "Condo",
+      "floorspace": 768,
+      "beds": 2,
+      "baths": 2,
+      "price": 445000,
+      "parking": 1,
+      "construction": [
+        "elevator",
+        "garage"
+      ],
+      "responses": [
+        {
+          "id": "2",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "flawless",
+      "area": "Nairobi County",
+      "address": "62 Highland St, Eastchester, NY 10608",
+      "city": "Eastchester",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/7c5dd09658dccee8d89311272d163bfd/-/prod-property-core-backend-media-brk/5064961/91993e15-9490-4463-a04f-0e3a18d74ef9.JPG",
+      "type": "Single Family",
+      "floorspace": 1264,
+      "beds": 4,
+      "baths": 1,
+      "price": 325000,
+      "parking": 0,
+      "construction": [
+        "basement",
+        "landry"
+      ],
+      "responses": [
+        {
+          "id": "3",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "clean lines and neutral tones",
+      "area": "Nairobi County",
+      "address": "33 Alden Pl, Bronxville, NY 10708",
+      "city": "Bronxville",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/9b85a2219f7088b3d52fc04f42e0a59c/-/prod-property-core-backend-media-brk/5064968/d54e17d4-97f4-4b30-bcda-763d06c15373.JPG",
+      "type": "Townhouse",
+      "floorspace": 1074,
+      "beds": 3,
+      "baths": 1,
+      "price": 665000,
+      "parking": 0,
+      "construction": [
+        "fireplace",
+        "gym"
+      ],
+      "responses": [
+        {
+          "id": "4",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "chic and stylish apartment",
+      "area": "Mombasa County",
+      "address": "261 California rd, Mamaroneck, NY 10612",
+      "city": "Mamaroneck",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/6767c692034387f6343a309e7063ba90/-/prod-property-core-backend-media-brk/5064970/05e36f1b-2ce8-458e-8e4d-750024fc0594.JPG",
+      "type": "Studio",
+      "floorspace": 700,
+      "beds": 1,
+      "baths": 1,
+      "price": 265000,
+      "parking": 1,
+      "construction": [
+        "landry",
+        "gym"
+      ],
+      "responses": [
+        {
+          "id": "5",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "charming and quirky apartment",
+      "area": "Mombasa County",
+      "address": "23 Isle Lane, New Rochelle, NY 10538",
+      "city": "New Rochelle",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/7cd2f411e8075c8d436a4e10602ff2c5/-/prod-property-core-backend-media-brk/5064971/832365ee-2bb7-4408-ad39-3499e689535d.JPG",
+      "type": "Multi Family",
+      "floorspace": 1630,
+      "beds": 3,
+      "baths": 2,
+      "price": 765000,
+      "parking": 3,
+      "construction": [
+        "basement",
+        "fireplace"
+      ],
+      "responses": [
+        {
+          "id": "6",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Its the walls for me",
+      "area": "Kiambu County",
+      "address": "95 Vernon ave, Scarsdale, NY 10538",
+      "city": "Scarsdale",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/74873b698d316d3a95d7b4d93f64a781/-/prod-property-core-backend-media-brk/5064972/1e2c092e-d727-4315-8524-7dcbb2ea4c2d.JPG",
+      "type": "Studio",
+      "floorspace": 1200,
+      "beds": 1,
+      "baths": 1,
+      "price": 215000,
+      "parking": 3,
+      "construction": [
+        "elevator",
+        "garage"
+      ],
+      "responses": [
+        {
+          "id": "7",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Cozy studio apartment ",
+      "area": "Kiambu County",
+      "address": "321 Munday Lane, Eastchester, NY 10606",
+      "city": "Eastchester",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/f894222c7416dfbf3bfe4762877cd430/-/prod-property-core-backend-media-brk/5064973/3e4063b7-4765-4b50-9180-1fc320439bc4.JPG",
+      "type": "Multi Family",
+      "floorspace": 2100,
+      "beds": 3,
+      "baths": 1,
+      "price": 845000,
+      "parking": 3,
+      "construction": [
+        "basement",
+        "pool"
+      ],
+      "responses": [
+        {
+          "id": "8",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Modern Finish",
+      "area": "Kiambu County",
+      "address": "123 Ducksworth Way, New Rochelle, NY 10535",
+      "city": "New Rochelle",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/f961168153fbbe83dc894b0db2d198d7/-/prod-property-core-backend-media-brk/5064974/8da3af98-8439-4ce8-a62c-1a07b3859aed.JPG",
+      "type": "Single Family",
+      "floorspace": 2300,
+      "beds": 2,
+      "baths": 1,
+      "price": 650000,
+      "parking": 3,
+      "construction": [
+        "garage",
+        "landry"
+      ],
+      "responses": [
+        {
+          "id": "9",
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "message": "I'm interested in this property."
+        }
+      ]
+    }
+  ]
 }

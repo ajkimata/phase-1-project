@@ -7,8 +7,7 @@
     <title>KIMATA INC Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    
 </head>
 
 <body>
@@ -17,19 +16,25 @@
         <header>
             <h1>KIMATA INC</h1>
         </header>
-    
+
         <div class="header-social-icons ml-0">
             <div class="social-icons follow-icons">
-                <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow" class="icon plain instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow"
+                    class="icon plain instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i
+                        class="fa fa-instagram"></i></a>
                 <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow"
                     class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i
                         class="icon-facebook"></i></a>
-                <a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener noreferrer" class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener noreferrer"
+                    class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i
+                        class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com/ki.mata_/" target="_blank" rel="noopener noreferrer nofollow"
                     class="icon plain instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i
                         class="icon-instagram"></i></a>
-                        
-                <a href="https://twitter.com/kimata__" target="_blank" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i class="fa fa-twitter"></i></a>
+
+                <a href="https://twitter.com/kimata__" target="_blank" rel="noopener noreferrer nofollow"
+                    class="icon plain twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i
+                        class="fa fa-twitter"></i></a>
                 <a href="https://twitter.com/kimata__" target="_blank" rel="noopener noreferrer nofollow"
                     class="icon plain twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i
                         class="icon-twitter"></i></a>
@@ -40,7 +45,7 @@
                     aria-label="Follow on YouTube"><i class="icon-youtube"></i></a>
             </div>
         </div>
-        <!-- Closing tag for the header-social-icons div -->
+
         <div class="flex-col show-for-medium flex-grow">
             <ul class="nav nav-center nav-small mobile-nav nav-divided">
                 <li class="custom html_topbar_left">
@@ -48,8 +53,14 @@
                 </li>
             </ul>
         </div>
+
+        <div class="header-icons">
+            <a href="#" class="shopping-cart"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#" class="favorites"><i class="fa fa-heart"></i></a>
+        </div>
+
     </nav>
-    
+
 
     <!-- Banner section -->
     <section id="banner">
@@ -153,30 +164,22 @@
     </section>
 
     <!-- Contact section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name-input">Name:</label>
-            <input type="text" id="name-input" placeholder="Enter your name" required />
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email-input">Email:</label>
-            <input type="email" id="email-input" placeholder="Enter your email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="message-input">Message:</label>
-            <textarea id="message-input" placeholder="Enter your message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-            <label for="property-dropdown">Property Type:</label>
-            <select id="property-dropdown">
-                <!-- <option value="house">House</option> -->
-                <!-- <option value="apartment">Apartment</option>
-                <option value="condo">Condo</option>
-                <option value="townhouse">Townhouse</option>
-                <option value="land">Land</option> -->
-            </select>
-            </select><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <input type="hidden" id="property-id" name="propertyId" value="123">
+
+        <input type="submit" value="Send">
+    </form>
+
+
     <script src="index.js"></script>
     <!-- <script src="/js/bundle.js"></script> -->
 </body>

@@ -14,7 +14,6 @@ setInterval(() => {
     imageElement.src = images[currentIndex];
 }, 3000); // change image every 3 seconds
 
-
 // Get a reference to the property list div
 const propertyList = document.getElementById("property-list");
 
@@ -31,28 +30,58 @@ fetch("http://localhost:3000/property")
             imageElement.src = property.image;
             propertyElement.appendChild(imageElement);
 
-
             const titleElement = document.createElement("h3");
             titleElement.textContent = property.title;
             propertyElement.appendChild(titleElement);
 
+            const areaElement = document.createElement("p");
+            areaElement.textContent = `Area: ${property.area} sq.ft`;
+            propertyElement.appendChild(areaElement);
+
+            const cityElement = document.createElement("p");
+            cityElement.textContent = `City: ${property.city}`;
+            propertyElement.appendChild(cityElement);
+
+            const bedsElement = document.createElement("p");
+            bedsElement.textContent = `Beds: ${property.beds}`;
+            propertyElement.appendChild(bedsElement);
+
             const priceElement = document.createElement("p");
-            priceElement.textContent = property.price;
+            priceElement.textContent = `Price: $${property.price}`;
             propertyElement.appendChild(priceElement);
 
-            const locationElement = document.createElement("p");
-            locationElement.textContent = property.location;
-            propertyElement.appendChild(locationElement);
+            const constructionElement = document.createElement("p");
+            constructionElement.textContent = `Construction: ${property.construction}`;
+            propertyElement.appendChild(constructionElement);
 
             const descriptionElement = document.createElement("p");
             descriptionElement.textContent = property.description;
             propertyElement.appendChild(descriptionElement);
+
+            // Add the like button
+            const likeButton = document.createElement("button");
+            likeButton.innerHTML = '<i class="fa fa-heart-o"></i> Like';
+            likeButton.classList.add("like-button");
+            likeButton.addEventListener("click", () => {
+                likeButton.innerHTML = '<i class="fa fa-heart"></i> Liked';
+                likeButton.classList.add("liked");
+            });
+            propertyElement.appendChild(likeButton);
+
+            // Add the enquire button
+            const enquireButton = document.createElement("button");
+            enquireButton.textContent = "Enquire";
+            enquireButton.classList.add("enquire-button");
+            propertyElement.appendChild(enquireButton);
 
             propertyList.appendChild(propertyElement);
         });
     })
     .catch(error => console.error(error));
 
+
+
+//search function
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 const searchResults = document.getElementById('search-results');
@@ -89,89 +118,31 @@ searchButton.addEventListener('click', () => {
         .catch(error => console.error(error));
 });
 
+// handle form submit
+const form = document.querySelector('#contact-form');
 
-//
-//   const contactForm = document.getElementById("contact-form");
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const jsonObject = {};
+    formData.forEach((value, key) => { jsonObject[key] = value });
+    const jsonData = JSON.stringify(jsonObject);
 
-//   contactForm.addEventListener("submit", async (event) => {
-//     event.preventDefault(); // prevent the form from submitting
-
-//     const name = document.getElementById("name-input").value;
-//     const email = document.getElementById("email-input").value;
-//     const message = document.getElementById("message-input").value;
-
-//     try {
-//       const response = await fetch("http://localhost:3000/property", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ name, email, message }),
-//       });
-
-//       if (response.ok) {
-//         alert("Thank you for your message!");
-//         contactForm.reset(); // clear the form
-//       } else {
-//         throw new Error("Something went wrong");
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       alert("Failed to send message");
-//     }
-//   });
-
-const propertyDropdown = document.getElementById('property-dropdown');
-
-fetch('http://localhost:3000/property')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(property => {
-      const option = document.createElement('option');
-      option.value = property.id;
-      option.text = property.type;
-      propertyDropdown.appendChild(option);
-    });
-
-      // add an event listener to the dropdown
-      propertyDropdown.addEventListener('change', () => {
-          // get the selected value
-          const selectedValue = propertyDropdown.value;
-
-          // clear the options of propertyDropdown
-          propertyDropdown.innerHTML = '';
-
-          // add the selected option back, but selected
-          data.property.forEach(property => {
-              const option = document.createElement('option');
-              option.value = property.id;
-              option.text = property.type;
-              if (property.id === selectedValue) {
-                  option.selected = true;
-              }
-              propertyDropdown.appendChild(option);
-          });
-      });
-
-        // handle form submit
-        const form = document.querySelector('form');
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const name = document.getElementById('name-input').value;
-            const email = document.getElementById('email-input').value;
-            const message = document.getElementById('message-input').value;
-            //const propertyId = document.getElementById('property').value;
-
-        
-        fetch('http://localhost:3000/response', {
+    try {
+        const response = await fetch('http://localhost:3000/property', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, email, message})
-        })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.error(error));
-    });
-    })
-    .catch(error => console.error(error));
+            body: jsonData,
+        });
+
+        if (response.ok) {
+            form.reset();
+            alert('Thank you for your message!');
+        } else {
+            throw new Error(`Server responded with ${response.status}`);
+        }
+    } catch (error) {
+        console.error(error);
+        alert('There was an error submitting your message. Please try again later.');
+    }
+});
